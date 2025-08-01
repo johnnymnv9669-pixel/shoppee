@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="th">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ร้านค้าของคุณ</title>
+  <title>ສະນັບສະໜູນໂດຍການຊື້ເຄື່ອງ</title>
   <style>
     body {
       margin: 0;
@@ -80,8 +79,8 @@
   </style>
 </head>
 <body>
-  <h1>ร้านค้าของคุณ</h1>
-  <div id="loading">กำลังโหลดสินค้า...</div>
+  <h1>ສະນັບສະໜູນໂດຍການຊື້ເຄື່ອງ</h1>
+  <div id="loading">ກຳລັງໂຫລດຂໍ້ມູນ...</div>
   <div id="product-list" class="products" style="display: none;"></div>
 
   <script>
@@ -101,13 +100,13 @@
             <img src="${item.Pictures}" alt="${item.Name}" loading="lazy" />
             <h2>${item.Name}</h2>
             <p>${item.Price} ກີບ</p>
-            <a href="#">🛒 สั่งซื้อ</a>
+            <a href="#">🛒 ສັ່ງຊື້</a>
           `;
           productList.appendChild(div);
         });
       })
       .catch((error) => {
-        document.getElementById("loading").innerText = "โหลดข้อมูลล้มเหลว 😢";
+        document.getElementById("loading").innerText = "ໂຫລດຂໍ້ມູນຫຼົ້ມເລວ 😢";
         console.error(error);
       });
   </script>
