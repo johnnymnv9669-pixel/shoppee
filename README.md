@@ -84,7 +84,7 @@
   <div id="product-list" class="products" style="display: none;"></div>
 
   <script>
-    const API_URL = "https://script.google.com/macros/s/AKfycbwq5awwOMzMj3wPM8WFUlqpgW4Blbtygq81PgiO0XyfN2tPXlGpHLdq6GOCE9DKrQWbhg/exec";
+    const API_URL = "https://script.google.com/macros/s/AKfycbyYCo9_wN3_7Y52vDT5agBj24wLZgCFXx93rd73WGUajR8aoD5CXXVgUHyZI2Pws8ppBg/exec";
 
     fetch(API_URL)
       .then((res) => res.json())
