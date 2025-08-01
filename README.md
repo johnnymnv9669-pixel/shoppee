@@ -97,7 +97,7 @@
           const div = document.createElement("div");
           div.className = "product";
           div.innerHTML = `
-            <img src="${item.Pictures}" alt="${item.Name}" loading="lazy" />
+            <img src="${product.Pictures}" alt="${product.Name}" loading="lazy" class="w-full h-48 object-cover rounded">
             <h2>${item.Name}</h2>
             <p>${item.Price} ກີບ</p>
             <a href="#">🛒 ສັ່ງຊື້</a>
